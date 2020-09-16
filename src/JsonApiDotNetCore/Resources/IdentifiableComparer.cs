@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using JsonApiDotNetCore.Resources;
 
-namespace JsonApiDotNetCore.Hooks.Internal
+namespace JsonApiDotNetCore.Resources
 {
     /// <summary>
     /// Compares `IIdentifiable` with each other based on ID
