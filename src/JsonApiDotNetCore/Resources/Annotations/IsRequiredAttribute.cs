@@ -30,7 +30,7 @@ namespace JsonApiDotNetCore.Resources.Annotations
             {
                 return ValidationResult.Success;
             }
-    
+
             return base.IsValid(value, validationContext);
         }
 
