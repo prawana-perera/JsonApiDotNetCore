@@ -51,14 +51,14 @@ public class Article : Identifiable
 ### Controllers
 
 ```csharp
-public class ArticlesController : JsonApiController<Article>
+public class PeopleController : JsonApiController<Person>
 {
-        public ArticlesController(
-            IJsonApiOptions options,
-            IResourceService<Article> resourceService,
-            ILoggerFactory loggerFactory)
-            : base(options, resourceService, loggerFactory)
-        { }
+    public PeopleController(
+        IJsonApiContext options,
+        ILoggerFactory loggerFactory,
+        IResourceService<Person> resourceService)
+    : base(options, resourceService, loggerFactory)
+    { }
 }
 ```
 
