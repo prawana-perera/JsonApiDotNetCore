@@ -68,10 +68,10 @@ where `TResource` is the model that inherits from `Identifiable<TId>`
 public class PeopleController : JsonApiController<Person>
 {
     public PeopleController(
-        IJsonApiOptions options,
+        IJsonApiContext options,
         ILoggerFactory loggerFactory,
         IResourceService<Person> resourceService)
-    : base(options, loggerFactory, resourceService)
+    : base(options, resourceService, loggerFactory)
     { }
 }
 ```
